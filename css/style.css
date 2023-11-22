@@ -443,6 +443,7 @@ ol {
 ============================= */
 #connect {
     margin: 120px 0;
+    position: relative;
 }
 
 
@@ -502,6 +503,49 @@ ol {
     right: 0;
 }
 
+#connect .bannerCircle_one {
+    position: absolute;
+    top: 18%;
+    left: 35%;
+    width: 120px;
+    height: 120px;
+    border: 1px solid #FFABBA;
+    border-radius: 50%;
+    animation: circleOne 4s linear infinite;
+
+}
+
+@keyframes circleOne {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#connect .bannerCircle_one::after {
+    position: absolute;
+    content: "";
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FFABBA;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+
+#connect i {
+    position: absolute;
+    top: 15%;
+    right: 4%;
+    font-size: 20px;
+    color: #C087EE;
+}
+
 /* ============================
         Connect Code End
 ============================= */
@@ -509,11 +553,93 @@ ol {
 
 
 /* ============================
-        Common Code Start
+        Works Code Start
 ============================= */
+#works {
+    padding-bottom: 120px;
+    position: relative;
+}
+
+#works .works_heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#works .works_heading h2 {
+    width: 693px;
+    padding-top: 10px;
+}
+
+#works .works_wrapper {
+    padding-top: 60px;
+    display: flex;
+    column-gap: 25px;
+    row-gap: 30px;
+    flex-wrap: wrap;
+}
+
+#works .works_wrapper .works_item {
+    width: 570px;
+}
+
+#works .works_wrapper .works_item:nth-child(2),
+#works .works_wrapper .works_item:nth-child(3) {
+    width: 810px;
+}
+
+#works .works_wrapper .works_item .worksImg_box {
+    width: 100%;
+    height: 330px;
+    overflow: hidden;
+}
+
+#works .works_wrapper .works_item .worksImg_box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#works .works_wrapper .works_item .works_content {
+    background-color: var(--white);
+    padding: 30px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#works .works_wrapper .works_item .works_content .title {
+    line-height: 140%;
+    /* 18px */
+}
+
+#works .works_wrapper .works_item .works_content .paragraph {
+    font-weight: 500;
+    color: var(--brand_clr);
+    line-height: 100%;
+    /* 18px */
+    padding-top: 10px;
+}
+
+
+#works .works_shape {
+    position: absolute;
+    top: -26%;
+    left: 0;
+}
+
+#works i {
+    position: absolute;
+    bottom: 7%;
+    right: 4%;
+    font-size: 20px;
+    color: #C087EE;
+}
+
 /* ============================
-        Common Code End
+        Works Code End
 ============================= */
+
+
+
 /* ============================
         Common Code Start
 ============================= */
