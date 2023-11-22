@@ -16,6 +16,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 a {
     text-decoration: none;
     display: inline-block;
@@ -66,9 +70,19 @@ ol {
     -o-transition: all linear .3s;
 }
 
-.common_btn:hover{
+.common_btn:hover {
     background-color: var(--brand_clr);
     color: var(--white);
+}
+
+.paragraph {
+    color: var(--priamry);
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 200%;
+    /* 36px */
+    text-transform: capitalize;
 }
 
 /* ============================
@@ -81,7 +95,11 @@ ol {
 ============================= */
 #navbar {
     padding: 30px;
-    background-color: red;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
 }
 
 .nav_wrapper {
@@ -110,24 +128,256 @@ ol {
     -o-transition: all linear .3s;
 }
 
-.nav_wrapper .menu ul li a:hover{
-color: var(--brand_clr);
+.nav_wrapper .menu ul li a:hover {
+    color: var(--brand_clr);
 }
 
 /* ============================
         Navbar Code End
 ============================= */
 
+/* ============================
+        Banner Code Start
+============================= */
+#banner {
+    background-color: #FBF3F0;
+    padding: 293px 0 297px;
+    position: relative;
+}
+
+#banner .banner_content {
+    text-align: center;
+    position: relative;
+}
+
+#banner .banner_content h1 {
+    color: var(--priamry);
+    font-family: Poppins;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    /* 83.2px */
+    text-transform: capitalize;
+    width: 771px;
+    margin: 0 auto;
+}
+
+#banner .banner_content p {
+    width: 547px;
+    margin: 0 auto;
+    padding: 24px 0 44px;
+}
 
 
+#banner .banner_content .banner_btn {
+    display: flex;
+    column-gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#banner .banner_content .bannershape_two {
+    position: absolute;
+    top: -70px;
+    left: -100px;
+}
+
+#banner .banner_content .bannerShape_six {
+    position: absolute;
+    bottom: -40px;
+    left: 35px;
+}
+
+
+#banner .bannerShape_one {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#banner .bannerShape_three {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+}
+
+#banner .bannerShape_four {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#banner .bannerShape_five {
+    position: absolute;
+    right: 105px;
+    bottom: 0;
+}
+
+#banner .bannerCircle_one {
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    border: 1px solid #FFABBA;
+    border-radius: 50%;
+    animation: circleOne 4s linear infinite;
+
+}
+
+@keyframes circleOne {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#banner .bannerCircle_one::after {
+    position: absolute;
+    content: "";
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FFABBA;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+#banner .bannerCircle_two {
+    position: absolute;
+    bottom: 90px;
+    left: 265px;
+    width: 238px;
+    height: 238px;
+    border: 2px solid #FFDCD8;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#banner .bannerCircle_three {
+    position: absolute;
+    top: 178px;
+    right: -110px;
+    width: 220px;
+    height: 220px;
+    border: 2px solid #C087EE;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+/* #banner .banner_cross{
+    position: absolute;
+} */
+
+#banner .banner_cross i:nth-child(1) {
+    position: absolute;
+    top: 36%;
+    right: 25%;
+    font-size: 20px;
+    color: #C087EE;
+}
+
+#banner .banner_cross i:nth-child(2) {
+    position: absolute;
+    top: 55%;
+    right: 36%;
+    font-size: 20px;
+    color: #FFDCD8;
+}
+
+#banner .banner_cross i:nth-child(3) {
+    position: absolute;
+    bottom: 32%;
+    left: 7%;
+    font-size: 20px;
+    color: #FFDCD8;
+}
+
+#banner .banner_cross i:nth-child(4) {
+    position: absolute;
+    top: 130px;
+    left: 275px;
+    font-size: 20px;
+    color: #FFDCD8;
+}
+
+#banner .banner_cross i:nth-child(5) {
+    position: absolute;
+    bottom: 20%;
+    left: 55%;
+    font-size: 20px;
+    color: #FFDCD8;
+}
+
+#banner .banner_ball i:nth-child(1) {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    font-size: 20px;
+    color: #FFDCD8;
+}
+
+#banner .banner_ball i:nth-child(2) {
+    position: absolute;
+    bottom: 35%;
+    left: 36%;
+    font-size: 5px;
+    color: #FFDCD8;
+}
+
+#banner .banner_ball i:nth-child(3) {
+    position: absolute;
+    bottom: 53%;
+    left: 30%;
+    font-size: 10px;
+    color: #FFDCD8;
+}
+
+#banner .banner_ball i:nth-child(4) {
+    position: absolute;
+    bottom: 70%;
+    left: 25%;
+    font-size: 6px;
+    color: #FFABBA;
+}
+
+#banner .banner_ball i:nth-child(5) {
+    position: absolute;
+    top: 25%;
+    right: 40%;
+    font-size: 12px;
+    color: #C087EE;
+}
+
+#banner .banner_ball i:nth-child(6) {
+    position: absolute;
+    top: 15%;
+    right: 29%;
+    font-size: 5px;
+    color: #C087EE;
+}
 
 
 /* ============================
-        Common Code Start
+        Banner Code End
 ============================= */
-/* ============================
-        Common Code End
-============================= */
+
+
+
 /* ============================
         Common Code Start
 ============================= */
