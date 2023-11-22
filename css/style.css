@@ -641,11 +641,101 @@ ol {
 
 
 /* ============================
-        Common Code Start
+        Counter Code Start
 ============================= */
+#counter {
+    background: #FDF9F8;
+    padding: 120px 0;
+    position: relative;
+}
+
+#counter .counter_wrapper{
+    display: flex;
+    column-gap: 100px;
+}
+
+#counter .counter_wrapper .counter_main {
+    width: 550px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    z-index: 99;
+}
+
+.counter_wrapper .counter_main .counter_item {
+    text-align: center;
+    width: 260px;
+    background-color: var(--white);
+    padding: 74px 60px;
+}
+
+.counter_wrapper .counter_main .counter_item h3 {
+    color: var(--priamry);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    text-transform: capitalize;
+}
+
+.counter_wrapper .counter_main .counter_item p {
+    line-height: 100%;
+    /* 18px */
+}
+
+
+#counter .counter_content{
+    width: 760px;
+}
+#counter .counter_content h3{
+    width: 570px;
+    color: var(--priamry);
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 140%;
+    /* 67.2px */
+    text-transform: capitalize;
+}
+
+#counter .counter_content p{
+    width: 550px;
+padding: 20px 0 40px;
+
+}
+
+#counter .counter_shape{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#counter .counter_circle{
+position: absolute;
+top: 31%;
+left: 2%;
+width: 238px;
+height: 238px;
+border: 2px solid  #FFDCD8;
+border-radius: 50%;
+}
+
+#counter i {
+    position: absolute;
+    top: 47%;
+    left: 5%;
+    font-size: 20px;
+    color: #FFDCD8;
+}
+
 /* ============================
-        Common Code End
+        Counter Code End
 ============================= */
+
+
+
+
+
+
 /* ============================
         Common Code Start
 ============================= */
