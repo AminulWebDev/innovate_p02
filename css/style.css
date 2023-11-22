@@ -85,6 +85,14 @@ ol {
     text-transform: capitalize;
 }
 
+.sub_heading {
+    color: var(--priamry);
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 160%;
+    text-transform: capitalize;
+}
+
 /* ============================
         Common Code End
 ============================= */
@@ -213,8 +221,14 @@ ol {
 
 #banner .bannerShape_five {
     position: absolute;
-    right: 105px;
-    bottom: 0;
+    right: 102px;
+    bottom: 58px;
+}
+
+#banner .bannerShape_seven {
+    position: absolute;
+   left: 0;
+    bottom: -22%;
 }
 
 #banner .bannerCircle_one {
@@ -371,19 +385,44 @@ ol {
     color: #C087EE;
 }
 
-
 /* ============================
         Banner Code End
 ============================= */
 
+/* ============================
+        Service Code Start
+============================= */
+#service{
+    position: relative;
+    top: -50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
 
+#service .service_wrapper {
+    display: flex;
+    column-gap: 30px;
+}
+
+#service .service_wrapper .service_item {
+    background-color: var(--white);
+    width: 450px;
+    padding: 40px 46px 40px 30px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#service .service_wrapper .service_item h3{
+   padding: 34px 0 16px;
+}
 
 /* ============================
-        Common Code Start
+        Service Code End
 ============================= */
-/* ============================
-        Common Code End
-============================= */
+
+
+
 /* ============================
         Common Code Start
 ============================= */
