@@ -154,6 +154,9 @@ ol {
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
 }
+.nav_wrapper .menu ul li a i {
+   margin-left: 8px;
+}
 
 .nav_wrapper .menu ul li a:hover {
     color: var(--brand_clr);
@@ -168,8 +171,41 @@ ol {
 ============================= */
 #banner {
     background-color: #FBF3F0;
-    padding: 293px 0 297px;
+    padding: 115px 0 297px;
     position: relative;
+}
+
+
+#banner .bannerCircle_one {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border: 1px solid #FFABBA;
+    border-radius: 50%;
+    animation: circleOne 4s linear infinite;
+    margin: 0 auto 60px auto;
+}
+
+@keyframes circleOne {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#banner .bannerCircle_one::after {
+    position: absolute;
+    content: "";
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FFABBA;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
 }
 
 #banner .banner_content {
@@ -250,39 +286,7 @@ ol {
     bottom: -22%;
 }
 
-#banner .bannerCircle_one {
-    position: absolute;
-    top: 110px;
-    left: 50%;
-    width: 120px;
-    height: 120px;
-    border: 1px solid #FFABBA;
-    border-radius: 50%;
-    animation: circleOne 4s linear infinite;
 
-}
-
-@keyframes circleOne {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-#banner .bannerCircle_one::after {
-    position: absolute;
-    content: "";
-    top: -12px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #FFABBA;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-}
 
 #banner .bannerCircle_two {
     position: absolute;
@@ -402,6 +406,39 @@ ol {
     right: 29%;
     font-size: 5px;
     color: #C087EE;
+}
+
+.bannerSide_content {
+    position: absolute;
+    top: 18%;
+    left: 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.bannerSide_content .language {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+#banner .bannerSide_content p {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    color: var(--priamry);
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 100%;
+    text-transform: lowercase;
+}
+
+.bannerSide_content .scroll {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* ============================
