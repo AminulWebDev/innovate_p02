@@ -680,22 +680,14 @@ ol {
 
 .counter_wrapper .counter_main .counter_item p {
     line-height: 100%;
-    /* 18px */
 }
-
 
 #counter .counter_content {
     width: 760px;
 }
 
-#counter .counter_content h3 {
+#counter .counter_content h2 {
     width: 570px;
-    color: var(--priamry);
-    font-size: 48px;
-    font-weight: 600;
-    line-height: 140%;
-    /* 67.2px */
-    text-transform: capitalize;
 }
 
 #counter .counter_content p {
@@ -752,17 +744,63 @@ ol {
     color: #FFDCD8;
 }
 
-
-
 /* ============================
         Counter Code End
 ============================= */
 
+/* ============================
+        Company Code Start
+============================= */
+#company {
+    padding: 120px 0;
+}
+
+#company .company_heading {
+    width: 849px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+#company .company_wrapper {
+    display: flex;
+    column-gap: 30px;
+    flex-wrap: wrap;
+}
+
+#company .company_wrapper .company_item {
+    background-color: #FDF9F8;
+    width: 210px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ============================
+        Company Code End
+============================= */
 
 
 
-
-
+/* ============================
+        Common Code Start
+============================= */
+/* ============================
+        Common Code End
+============================= */
+/* ============================
+        Common Code Start
+============================= */
+/* ============================
+        Common Code End
+============================= */
+/* ============================
+        Common Code Start
+============================= */
+/* ============================
+        Common Code End
+============================= */
 /* ============================
         Common Code Start
 ============================= */
