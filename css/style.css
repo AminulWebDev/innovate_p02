@@ -238,22 +238,16 @@ ol {
     align-items: center;
 }
 
-#banner .banner_content .bannershape_two {
-    position: absolute;
-    top: -70px;
-    left: -100px;
-}
-
-#banner .banner_content .bannerShape_six {
-    position: absolute;
-    bottom: -40px;
-    left: 35px;
-}
-
 #banner .bannerShape_one {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+#banner .bannershape_two {
+    position: absolute;
+    top: 24%;
+    left: 8%;
 }
 
 #banner .bannerShape_three {
@@ -271,8 +265,14 @@ ol {
 
 #banner .bannerShape_five {
     position: absolute;
-    right: 102px;
-    bottom: 58px;
+    right: 6%;
+    bottom: 6%;
+}
+
+#banner .bannerShape_six {
+    position: absolute;
+    bottom: 27%;
+    left: 16%;
 }
 
 #banner .bannerShape_seven {
@@ -283,8 +283,8 @@ ol {
 
 #banner .bannerCircle_two {
     position: absolute;
-    bottom: 90px;
-    left: 265px;
+    bottom: 9%;
+    left: 14%;
     width: 238px;
     height: 238px;
     border: 2px solid #FFDCD8;
@@ -297,23 +297,13 @@ ol {
 
 #banner .bannerCircle_three {
     position: absolute;
-    top: 178px;
-    right: -110px;
-    width: 220px;
-    height: 220px;
-    border: 2px solid #C087EE;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+    top: 19%;
+    right: 0;
 }
 
-/* #banner .banner_cross{
-    position: absolute;
-} */
 
-#banner .banner_cross i:nth-child(1) {
+
+#banner .bannerCross_01 {
     position: absolute;
     top: 36%;
     right: 25%;
@@ -321,7 +311,7 @@ ol {
     color: #C087EE;
 }
 
-#banner .banner_cross i:nth-child(2) {
+#banner .bannerCross_02 {
     position: absolute;
     top: 55%;
     right: 36%;
@@ -329,7 +319,7 @@ ol {
     color: #FFDCD8;
 }
 
-#banner .banner_cross i:nth-child(3) {
+#banner .bannerCross_03 {
     position: absolute;
     bottom: 32%;
     left: 7%;
@@ -337,15 +327,15 @@ ol {
     color: #FFDCD8;
 }
 
-#banner .banner_cross i:nth-child(4) {
+#banner .bannerCross_04 {
     position: absolute;
-    top: 130px;
-    left: 275px;
+    top: 14%;
+    left: 14%;
     font-size: 20px;
     color: #FFDCD8;
 }
 
-#banner .banner_cross i:nth-child(5) {
+#banner .bannerCross_05 {
     position: absolute;
     bottom: 20%;
     left: 55%;
@@ -353,7 +343,7 @@ ol {
     color: #FFDCD8;
 }
 
-#banner .banner_ball i:nth-child(1) {
+#banner .bannerBall_01 {
     position: absolute;
     bottom: 20%;
     left: 10%;
@@ -361,7 +351,7 @@ ol {
     color: #FFDCD8;
 }
 
-#banner .banner_ball i:nth-child(2) {
+#banner .bannerBall_02 {
     position: absolute;
     bottom: 35%;
     left: 36%;
@@ -369,7 +359,7 @@ ol {
     color: #FFDCD8;
 }
 
-#banner .banner_ball i:nth-child(3) {
+#banner .bannerBall_03 {
     position: absolute;
     bottom: 53%;
     left: 30%;
@@ -377,7 +367,7 @@ ol {
     color: #FFDCD8;
 }
 
-#banner .banner_ball i:nth-child(4) {
+#banner .bannerBall_04 {
     position: absolute;
     bottom: 70%;
     left: 25%;
@@ -385,7 +375,7 @@ ol {
     color: #FFABBA;
 }
 
-#banner .banner_ball i:nth-child(5) {
+#banner .bannerBall_05 {
     position: absolute;
     top: 25%;
     right: 40%;
@@ -393,7 +383,7 @@ ol {
     color: #C087EE;
 }
 
-#banner .banner_ball i:nth-child(6) {
+#banner .bannerBall_06 {
     position: absolute;
     top: 15%;
     right: 29%;
@@ -733,7 +723,7 @@ ol {
     border-radius: 50%;
 }
 
-#counter .works_ball i:nth-child(1) {
+#counter .worksBAll_01 {
     position: absolute;
     top: 47%;
     left: 5%;
@@ -741,7 +731,7 @@ ol {
     color: #FFDCD8;
 }
 
-#counter .works_ball i:nth-child(2) {
+#counter .worksBAll_02 {
     position: absolute;
     top: 8%;
     left: 12%;
@@ -749,7 +739,7 @@ ol {
     color: #FFDCD8;
 }
 
-#counter .works_ball i:nth-child(3) {
+#counter .worksBAll_03 {
     position: absolute;
     bottom: 6%;
     left: 37%;
@@ -910,7 +900,7 @@ ol {
 }
 
 
-#customer .customer_shape i:nth-child(1) {
+#customer .customerShape_01 {
     position: absolute;
     top: 10%;
     left: 10%;
@@ -918,7 +908,7 @@ ol {
     color: #C087EE;
 }
 
-#customer .customer_shape i:nth-child(2) {
+#customer .customerShape_02 {
     position: absolute;
     bottom: 29%;
     left: 0;
@@ -926,7 +916,7 @@ ol {
     color: #FFDCD8;
 }
 
-#customer .customer_shape i:nth-child(3) {
+#customer .customerShape_03 {
     position: absolute;
     top: 10%;
     right: 11%;
